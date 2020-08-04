@@ -1,0 +1,9 @@
+FROM gns3/ubuntu:xenial
+
+RUN sed -i 's/archive.ubuntu.com/ftp.ntou.edu.tw/g' /etc/apt/sources.list;
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y python3 python3-pip python3-dev iperf
+RUN pip3 install scapy netifaces
+
+ADD container_receiver.py /
