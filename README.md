@@ -21,13 +21,11 @@ System requirement:
 2. Install tools via pip3: **sudo pip3 install scapy netifaces requests paramiko**
 ### GNS3 Server
 1. Install GNS3 remote server: (website: https://docs.gns3.com/docs/getting-started/installation/remote-server)
-'''
-    sudo su;
-    cd /tmp;
-    wget -c https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh -O gns3-remote-install.sh;
-    **(Notice that please comment line 153-157 before running install script. )**
-    bash gns3-remote-install.sh --with-iou --with-i386-repository;
-'''
+    > sudo su;<br>
+    > cd /tmp;<br>
+    > wget -c https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh -O gns3-remote-install.sh;<br>
+    > **(Notice that please comment line 153-157 before running install script. )**
+    > bash gns3-remote-install.sh --with-iou --with-i386-repository;<br>
 2. Install tools via apt: **sudo apt install bridge-utils**
 3. If you are configuring GNS3 remote server 1, you must copy viface_config.sh to /etc/network/if_up.d, And than configuring the shell script with permission 600
 ---
