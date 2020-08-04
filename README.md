@@ -24,7 +24,7 @@ System requirement:
     > sudo su;<br>
     > cd /tmp;<br>
     > wget -c https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh -O gns3-remote-install.sh;<br>
-    > **(Notice that please comment line 153-157 before running install script. )**
+    > **(Notice that please comment line 153-157 before running install script. )**<br>
     > bash gns3-remote-install.sh --with-iou --with-i386-repository;<br>
 2. Install tools via apt: **sudo apt install bridge-utils**
 3. If you are configuring GNS3 remote server 1, you must copy viface_config.sh to /etc/network/if_up.d, And than configuring the shell script with permission 600
