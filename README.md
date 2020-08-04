@@ -2,14 +2,14 @@
 ---
 This repo is for building a GNS3 Testbed from **A Fast Failure Recovery Scheme for Fibbing Networks**. 
 System requirement: 
- - Hardware:
- -- CPU: Intel i7 serise 
- -- RAM: 16 GB 
- -- Physical interfaces: 4
- - Software: 
- -- OS: Ubuntu 16.04.6 
- -- GNS3 Version: 2.1.21
- -- Python version: 2.7.17
+* Hardware:
+    * CPU: Intel i7 serise 
+    * RAM: 16 GB 
+    * Physical interfaces: 4
+* Software: 
+    * OS: Ubuntu 16.04.6 
+    * GNS3 Version: 2.1.21
+    * Python version: 2.7.17
 
 ---
 
@@ -19,11 +19,11 @@ System requirement:
 2. Install tools via pip3: **sudo pip3 install scapy netifaces requests paramiko**
 ### GNS3 Server
 1. Install GNS3 remote server: (website: https://docs.gns3.com/docs/getting-started/installation/remote-server)
-    > sudo su;
-    > cd /tmp;
-    > curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh > gns3-remote-install.sh;
-    > **(Notice that please comment line 153-157 before running install script. )**
-    > bash gns3-remote-install.sh --with-iou --with-i386-repository;
+    > sudo su;\n
+    > cd /tmp;\n
+    > curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh > gns3-remote-install.sh;\n
+    > **(Notice that please comment line 153-157 before running install script. )**\n
+    > bash gns3-remote-install.sh --with-iou --with-i386-repository;\n
 2. Install tools via apt: **sudo apt install bridge-utils**
 3. if you are configuring Server 1, you must copy viface_config.sh to /etc/network/if_up.d, And than configuring the shell script with permission 600
 ---
